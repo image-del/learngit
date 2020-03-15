@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<iostream>
+
+int main()
+printf("在高潮期，人们感到体力旺盛，精神愉快，头脑敏捷，记忆力强，富有创造性，更具有逻辑性和解决复杂问题的能力；在低潮期，人们感到体力差，容易疲劳，注意力不集中，烦躁、喜怒无常，判断力下降等；在临界期，人们的身体处于频繁的变化或过渡阶段，体力、情绪或智力极不稳定，办事粗心，容易出差错，协调力差，容易感染疾病，易发生事故。\n")
+{int x=1;
+while(x)
+{int a,b,c,d,e,f,g,h,j,k,m,n,o,p,q;float i;
+printf("请输入您的生日日期/Please enter your birthday date\n");
+scanf("%d%d%d",&a,&b,&c);
+printf("请输入您想查询的日期/Please enter the date you want to query\n");
+scanf("%d%d%d",&e,&f,&g);
+if(e!=a)
+{h=e-a;
+i=h/4;
+q=i;
+j=q+h*365;
+}
+k=30*f+g-30*b-c;
+m=j+k; 
+n=m%33;
+o=m%28;
+p=m%23;
+if(p<12) printf("您处于体力的高潮期/You are at the height of your strength\n");
+else if(p=12) printf("您处于体力的临界期/You are in a critical period of physical strength\n");
+else printf("您处于体力的低潮期/You are in a low ebb of physical strength\n");
+if (o<14) printf("您处于情绪的高潮期/You are at the height of your emotions\n");
+else if(o=14) printf("您处于情绪的临界期/You are in a critical period of emotion\n");
+else printf("您处于情绪的低潮期/You are in a low point in your mood\n");
+if(n<17) printf("您处于智商的高潮期/You are in a low point in your mood\n");
+else if (n=17) printf("您处于智商的临界期/You are in the critical period of IQ\n");
+else printf("您处于智商的低潮期/You are in a low point in your IQ\n");
+}
+system("pause");
+}
